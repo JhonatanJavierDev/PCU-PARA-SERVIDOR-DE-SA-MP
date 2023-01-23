@@ -13,7 +13,7 @@ Es muy sencillo su uso.
 
 ```1-Descarga e Instala XAMPP```
 
-[Descargar]([https://console.cloud.google.com/](https://www.apachefriends.org/es/index.html))
+[Descargar](https://www.apachefriends.org/es/index.html)
 
 ```2- Habilita el apache y el mysql```
 

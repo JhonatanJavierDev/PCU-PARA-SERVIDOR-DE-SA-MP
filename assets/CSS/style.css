@@ -1,0 +1,108 @@
+body{
+   background-size: cover;
+}
+
+.login-container{
+
+    width: 20%;
+    margin: 180px auto 0;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 24px, 26px, 28px #000;
+}
+
+form{
+
+    text-align: center;
+}
+
+label {
+
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"]{
+ 
+     width: 100%;
+     padding: 12px 20px;
+     margin: 8px 0;
+     box-sizing: border-box;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+}
+
+button[type="submit"]{
+
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button[type="submit"]:hover {
+    background-color: #ff5722;
+    box-shadow: 0px 0px 20px 10px #ff5722;
+}
+
+
+
+footer {
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(156,  117,  117);
+    background-color: rgb(0, 0, 0, 0.5);
+
+
+}
+
+#createBy {
+
+    color:rgb(163,  101,  101);
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #000;
+
+}
+#createBy:hover{
+
+    color: rgb(33, 0,  110);
+}
+
+
+i.fa-user {
+    
+    content: "\f007"; /*Icono del hombre(usuarios) lo puedes encontrar en la web de Font Awesome*/
+}
+
+i.fa-lock {
+    content: "\f084";/*Icono del candadito de Contras tambien puedes encontrarlo en la web de Font Awesome*/
+    
+}
+
+.input-group{
+
+    position: relative;
+}
+
+.input-group i{
+
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    font-size: 20px;
+}

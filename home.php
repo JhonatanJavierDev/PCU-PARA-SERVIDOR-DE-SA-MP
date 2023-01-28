@@ -1,8 +1,15 @@
 <?php
 session_start();
 include('./config/db_config.php');
-$datos= mysqli_query($conexion, "SELECT * FROM player WHERE name = '".$_SESSION['name']."' ");
-$datos=mysqli_fetch_array($datos);
+
+$name = $_SESSION['name'];
+$query = "SELECT * FROM player WHERE name = ?";
+$stmt = mysqli_prepare($conexion, $query);
+mysqli_stmt_bind_param($stmt, "s", $name);
+mysqli_stmt_execute($stmt);
+$result = mysqli_stmt_get_result($stmt);
+
+$datos = mysqli_fetch_array($result);
 $nombre=$datos['name'];
 $coins=$datos['coins'];
 $dinero=$datos['cash'];
